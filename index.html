@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Bugdroid</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/icon.png" type="image/png">
+</head>
+<body>
+    <div id="gameContainer"></div>
+    <div id="shop" class="overlay">
+        <button id="closeShop">Close Shop</button>
+        <button id="buyHint">Buy Hint (50 points)</button>
+        <button id="buyExtraTime">Buy Extra Time (100 points)</button>
+        <button id="buyFreeze">Buy Freeze (150 points)</button>
+        <button id="buyReveal">Buy Reveal (200 points)</button>
+        <button id="buySpeedBoost">Buy Speed Boost (250 points)</button>
+        <button id="buyInvincibility">Buy Invincibility (500 points)</button>
+    </div>
+    <div id="levelEditor" class="overlay">
+        <button id="closeLevelEditor">Close Editor</button>
+        <button id="saveLevel">Save Level</button>
+        <button id="loadLevels">Load Levels</button>
+        <div>
+            <label for="numBugdroids">Number of Bugdroids:</label>
+            <input type="number" id="numBugdroids" min="1" value="3">
+        </div>
+        <div>
+            <label for="numKitdroids">Number of Kitdroids:</label>
+            <input type="number" id="numKitdroids" min="1" value="10">
+        </div>
+    </div>
+    <div id="storyMode" class="overlay">
+        <button id="closeStoryMode">Close Story Mode</button>
+        <p id="storyText"></p>
+    </div>
+    <button id="shopButton" class="button">Shop</button>
+    <button id="levelEditorButton" class="button">Level Editor</button>
+    <button id="timedChallengeButton" class="button">Timed Challenge</button>
+    <button id="infoButton" class="button">What is the best Android version?</button>
+    <button id="helpButton" class="button">Want Help?</button>
+    <div id="challengeTimer">Challenge Time: 0</div>
+    <div id="points">Points: 0</div>
+    <div id="timeLeft">Time Left: 60</div>
+    <div id="roundsPlayed">Rounds Played: 0</div>
+    <div id="avgTimePerRound">Average Time per Round: 0.00</div>
+    <script src="index.js"></script>
+</body>
+</html>
